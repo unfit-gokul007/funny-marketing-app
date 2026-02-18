@@ -25,7 +25,7 @@ export default function AdminDashboard() {
   }, [token]);
 
   const fetchProducts = async () => {
-    const res = await axios.get("http://localhost:5000/api/products");
+    const res = await axios.get("https://funny-marketing-app.onrender.com/api/products");
     setProducts(res.data);
   };
 

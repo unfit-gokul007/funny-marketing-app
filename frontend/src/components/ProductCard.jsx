@@ -4,7 +4,7 @@ export default function ProductCard({ product, onOrder }) {
 
       {/* Product Image */}
       <img
-        src={`http://localhost:5000/uploads/${product.image}`}
+        src={`https://funny-marketing-app.onrender.com/uploads/${product.image}`}
         alt={product.name}
         className="h-48 w-full object-cover"
       />
