@@ -6,8 +6,3 @@ frontend/node_modules/
 backend/.env
 frontend/.env
 
-dist/
-frontend/dist/
-
-npm-debug.log
-
