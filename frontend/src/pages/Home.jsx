@@ -9,7 +9,7 @@ export default function Home({ setCartItems }) {
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/products")
+    axios.get("https://funny-marketing-app.onrender.com/api/products")
       .then(res => setProducts(res.data));
   }, []);
 

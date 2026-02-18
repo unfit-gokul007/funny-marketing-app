@@ -40,7 +40,7 @@ export default function AdminDashboard() {
     formData.append("stock", form.stock);
     formData.append("image", image);
 
-    await axios.post("http://localhost:5000/api/products", formData, {
+    await axios.post("https://funny-marketing-app.onrender.com/api/products", formData, {
       headers: {
         Authorization: token,
         "Content-Type": "multipart/form-data"
@@ -55,7 +55,7 @@ export default function AdminDashboard() {
 
   // 🟢 Delete Product
   const deleteProduct = async (id) => {
-    await axios.delete(`http://localhost:5000/api/products/${id}`, {
+    await axios.delete(`https://funny-marketing-app.onrender.com/api/products/${id}`, {
       headers: { Authorization: token }
     });
     fetchProducts();
@@ -140,7 +140,7 @@ export default function AdminDashboard() {
           >
             <div className="flex items-center gap-4">
               <img
-                src={`http://localhost:5000/uploads/${p.image}`}
+                src={`https://funny-marketing-app.onrender.com/uploads/${p.image}`}
                 alt=""
                 className="w-16 h-16 object-cover rounded"
               />

@@ -10,7 +10,7 @@ export default function AdminLogin() {
 
   const handleLogin = async () => {
     const res = await axios.post(
-      "http://localhost:5000/api/admin/login",
+      "https://funny-marketing-app.onrender.com/api/admin/login",
       form
     );
 

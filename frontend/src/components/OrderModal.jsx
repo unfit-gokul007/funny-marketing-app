@@ -10,7 +10,7 @@ export default function OrderModal({ product, close }) {
 
   const submitOrder = async () => {
     try {
-      await axios.post("http://localhost:5000/api/orders", {
+      await axios.post("https://funny-marketing-app.onrender.com/api/orders", {
         productId: product._id,
         quantity: form.quantity,
         customerName: form.customerName,
